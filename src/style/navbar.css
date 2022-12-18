@@ -1,0 +1,143 @@
+/* Navigation Style */
+.navigation {
+    width: 100%;
+    padding: 20px 0 30px 0;
+}
+
+.navigation box-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation box-nav .brand-name {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navigation box-nav .brand-name span {
+    color: #DF3A3A;
+}
+
+.navigation nav ul {
+    display: flex;
+}
+
+.navigation nav ul li {
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.navigation nav ul li a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.navigation box-nav nav ul li i {
+    display: none;
+}
+
+/* Navigation Hover */
+.navigation nav ul li a:hover {
+    color: #DF3A3A;
+}
+
+.navigation box-nav .toggle-menu {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+
+    /* Navigation Style */
+    .navigation box-nav nav {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        background-color: #F2F2F2;
+        width: 230px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all .3s ease;
+        z-index: 1;
+    }
+
+    .navigation box-nav .menu-nav.menu-active {
+        opacity: 1;
+        top: 80px;
+    }
+
+    .navigation box-nav nav ul {
+        flex-direction: column;
+    }
+
+    .navigation box-nav nav ul li a {
+        color: #DF3A3A;
+    }
+
+    .navigation box-nav nav ul li {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation box-nav nav ul li i {
+        display: inline-block;
+        margin-inline: 10px;
+        font-size: 20px;
+    }
+
+    .navigation box-nav .toggle-menu {
+        display: flex;
+        align-items: center;
+        color: #F2F2F2;
+        cursor: pointer;
+    }
+
+    .navigation box-nav .toggle-menu i {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation box-nav nav {
+        top: 30px;
+        right: 70px;
+        width: 200px;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    .navigation box-nav .menu-nav.menu-active {
+        opacity: 1;
+        top: 80px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .navigation box-nav nav ul li {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .navigation nav ul li a {
+        font-size: 16px;
+    }
+
+    .navigation nav ul li i {
+        font-size: 14px;
+    }
+
+    .navigation box-nav nav {
+        top: 30px;
+        right: 50px;
+        width: 200px;
+    }
+}

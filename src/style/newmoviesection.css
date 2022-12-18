@@ -1,0 +1,60 @@
+list-movie {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-movie {
+    width: 400px;
+    margin: 18px;
+    box-shadow: 5px 5px 20px rgb(36, 40, 48, 0.5);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card-movie:hover {
+    cursor: pointer;
+}
+
+.card-movie img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie-card-info {
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    color: #F2F2F2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(36, 40, 48, 0.5);
+    transform: translateY(55%);
+    transition: all 0.3s ease-in;
+}
+
+.card-movie:hover .movie-card-info {
+    transform: translateY(0);
+    background-color: #242830dc;
+}
+
+.card-movie:hover .movie-card-info p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.movie-card-info h3 {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.movie-card-info p {
+    margin: 10px 20px 10px 20px;
+    font-size: 16px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}

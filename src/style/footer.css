@@ -1,0 +1,13 @@
+/* Footer Style */
+footer-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 10px 0 10px 0;
+}
+
+footer-section .credit p {
+    color: black;
+}

@@ -1,0 +1,40 @@
+@import './newmoviesection.css';
+@import './searchbar.css';
+@import './footer.css';
+@import './movie.css';
+@import './hero.css';
+@import './navbar.css';
+@import '/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '/node_modules/@fortawesome/fontawesome-free/css/brands.css';
+@import '/node_modules/@fortawesome/fontawesome-free/css/solid.css';
+@import '/node_modules/remixicon/fonts/remixicon.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background-color: #242830;
+    background-image: linear-gradient(rgba(36, 40, 48, 0.5), rgba(36, 40, 48, 0.5)), url(/assets/background.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(36, 40, 48, 0.3), rgba(36, 40, 48, 0.3)), url(/assets/HeaderBackgroundEdit.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
